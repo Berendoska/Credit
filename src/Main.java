@@ -8,9 +8,13 @@ public class Main {
 
 
         int payment = service.calculate(credit, stake, period);
+        int second = service.calculate(credit, stake, period*2);
+        int past = service.calculate(credit, stake, period*3);
 
         System.out.println(payment);
-        
+        System.out.println(second);
+        System.out.println(past);
+
 
 
 
