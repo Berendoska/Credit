@@ -2,12 +2,19 @@ public class Main {
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
         int credit = 1_000_000;
-        double stake = 0.008_325;
+        double stake = 9.99 / 12 / 100;
         int period = 12;
 
 
-        int payment = service.calculate(credit, stake, period, a);
+
+        int payment = service.calculate(credit, stake, period);
+
         System.out.println(payment);
+        
+
+
+
     }
 }
-}
+
+
